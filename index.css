@@ -1,0 +1,220 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.full-page{
+    width:100vw;
+    height:100vh;
+    background-color: white;
+    padding: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.text{
+    width:500px;
+    height:200px;
+    color: darkmagenta;
+    animation: animation2 5s 1 ease-in-out;
+   
+    
+    
+}
+.full-page .text .product-lovers{
+   
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width:300px;
+    text-overflow: clip;
+    
+}
+.full-page .text .service-text{
+    font-weight: bold;
+    width:500px;
+    text-overflow: clip;
+
+
+}
+
+.full-page .testimonials{
+    width:100%;
+    height:300px;
+    margin-top: 50px;
+    
+    display: flex;
+}
+.full-page .testimonials .customer-reviews{
+    width:400px;
+    height:230px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: darkmagenta;
+    transition: border-bottom 0.5s, margin-top 0.5s;
+    animation: animation1 5s 1 ease-in-out;
+    
+    
+}
+.full-page .testimonials .customer-reviews:hover{
+    cursor: pointer;
+    border-bottom: 20px ridge darkmagenta;
+    margin-top: -10px;
+   
+}
+.full-page .testimonials .customer-reviews img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+.full-page .testimonials .customer-reviews .name,
+.full-page .testimonials .customer-reviews .verified{
+    position: relative;
+    top:-55px;
+    left:65px;
+    margin-top: 5px;
+    color: white;
+    
+    
+}
+.full-page .testimonials .customer-reviews .verified{
+    color: darksalmon;
+    font-weight: bold;
+}
+.full-page .testimonials .customer-reviews .name{
+    font-weight: bold;
+    font-size: large;
+
+}
+.full-page .testimonials .customer-reviews .review{
+    color: white;
+    position: relative;
+    margin-top: -30px;
+    font-weight: bold;
+    word-spacing: 3px;
+}
+.full-page .testimonials  .one,
+.full-page .testimonials  .two{
+    margin-left: 90px;
+}
+.full-page .testimonials  .two{
+    margin-top: 60px;
+}
+.full-page .testimonials  .one{
+    margin-top: 30px;
+}
+
+.full-page .star-rating{
+    width:450px;
+    height:50px;
+    background-color: darkgray;
+    color: darkmagenta;
+    margin-left: 295px;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: border-bottom 0.5s, transform 0.5s;
+    animation: animation3 5s 1 ease-in-out;
+}
+.full-page .star-rating:hover{
+    border-bottom: 5px ridge darkmagenta;
+    cursor: pointer;
+    transform: translateX(-30px);
+
+}
+.full-page .rating .star-rating i{
+    font-size: 20px;
+    color: darkorange;
+    
+}
+.full-page .rating .one{
+   margin-left:240px;
+}
+.full-page .rating .two{
+    margin-left:260px;
+ }
+.full-page .rating .star-rating p{
+    font-weight: bold;
+}
+
+@keyframes animation1{
+    0%{
+        transform: translateY(300px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes animation2{
+    0%{
+        transform: translateX(-600px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes animation3{
+    0%{
+        transform: translateX(600px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+
+@media (max-width:375px){
+    .full-page{
+        display: flex;
+        padding-left: 50px;
+    }
+    .full-page .text .service-text{
+        font-weight: bold;
+        width:300px;
+        text-overflow: clip;
+        text-align: center;
+    
+    
+    }
+    .full-page .text .product-lovers{
+        text-align: center;
+
+    }
+    .full-page .star-rating{
+      margin:0;
+      margin-top: 30px;
+      width:280px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+    }
+    .full-page .rating .one,
+        .full-page .rating .two{
+            margin: 0;
+            margin-top: 30px;
+        }
+        .full-page .testimonials{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            
+        }
+        .full-page .testimonials .customer-reviews{
+            margin: 0;
+            margin-top: 30px;
+            width:280px;
+        }
+        .full-page .testimonials .customer-reviews:hover{
+            border-bottom: 20px ridge darkmagenta;
+            margin-top: 0;
+        }
+              
+    
+
